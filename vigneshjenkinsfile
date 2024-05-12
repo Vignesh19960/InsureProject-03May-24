@@ -40,5 +40,11 @@ pipeline {
                         }
             }
       }
-   }
+
+     stage(''Push the image) {
+        steps {
+          sh 'docker push vignesh19960/insureme-project:01'
+               }
+          } 
+     }
 }
