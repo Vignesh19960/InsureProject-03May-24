@@ -31,5 +31,5 @@ pipeline {
         docker build -t vignesh19960/insureme-project:01
             }
         }
-      }
+    }
 }
