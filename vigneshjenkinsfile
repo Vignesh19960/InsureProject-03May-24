@@ -45,6 +45,5 @@ pipeline {
         steps {
           sh 'docker push vignesh19960/insureme-project:01'
                }
-          } 
-     }
-}
+            } 
+      }
