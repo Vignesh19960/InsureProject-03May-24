@@ -34,9 +34,9 @@ pipeline {
         }
     stage('Docker Login') {
        steps {
-         ego 'Login dockerhub to push the images'
-        withCredentials([usernamePassword(credentialsId: 'Dockerlogincreds', passwordVariable: 'dockerhubpass', usernameVariable: 'dockerhublogin')]) {
-         sh 'docker login -u ${dockerhublogin} -p ${dockerhubpass}'
+          ego 'Login dockerhub to push the images'
+          withCredentials([usernamePassword(credentialsId: 'Dockerlogincreds', passwordVariable: 'dockerhubpass', usernameVariable: 'dockerhublogin')]) {
+          sh 'docker login -u ${dockerhublogin} -p ${dockerhubpass}'
                         }
             }
       }
